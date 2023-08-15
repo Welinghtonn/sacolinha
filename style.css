@@ -302,18 +302,27 @@
 
 .produto-size,
 .frete-size,
-.valor-size {
+.valor-size{
+    font-size: 13px;
+}
+
+.valor-size-roxo{
+    color: var(--roxo-mais-claro);
     font-size: 13px;
 }
 
 .rectangle-30 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 2px;
-    align-self: stretch;
     border-radius: 6px;
+    width: 50%;
     background: var(--roxo-mais-claro, #A499C4);
 }
 
-.preco-bag-roxo {
+.preco-bag-roxo,
+.preco-roxo {
     color: var(--roxo-principal, #483D8B);
     font-family: Rubik;
     font-size: 17px;
@@ -352,19 +361,65 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
+    height: 45vh;
+    
 }
 
 .valor-escrita{
     display: flex;
     align-items: center;
     flex-direction: row;
-    width: 70%;
+    width: 80%;
     justify-content: space-between;
 }
 
+.valor-escrita-button{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 90%;
+    height: 5vh;
+    background-color: var(--roxo-mais-claro);
+    border-radius: 12px;
+}
 
+
+.conteiner-pix{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 50%;
+    height: 15vh;
+    background: #C2BAD880;
+    border-radius: 12px;
+
+}
+
+.pagamento-compras{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 15vh;
+}
+
+.button-pagamento{
+    border-radius: 10px;
+    padding: 15px;
+    background: #483D8B;
+    color: #FFF;
+}
+
+.button-compras{
+    border-radius: 10px;
+    padding: 15px;
+    background: #ffffff;
+    color: var(--roxo-principal);
+    border: var(--roxo-principal) solid;
+}
 
 @media (max-width: 890px) {
     .conteiner-sacola {
