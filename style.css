@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik';
+    /* outline: 2px dashed #000; */
+    transition: all .5s ease;
+    user-select: none;
+}
+
+
+:root {
+    --roxo-principal: #483d8b;
+    --roxo-secundario: #6652E2;
+    --roxo-mais-claro: #6652e2;
+    --roxo-claro: #8679b1;
+    --roxo-mais-claro: #a499c4;
+    --roxo-quase-branco: #c2bad8;
+    --branco-fundo: #e0dceb;
+
+    --cor-fundo-INPUTS: #f0f0f0;
+    --cinza-claro-bordas-INPUTS: #c2bad8;
+
+    --cinza-quase-preto: #343434;
+    --cinza-escuro-TEXTOS: #7b7b7b;
+    --cinza: #8e8e8e;
+}
+
+.body-bag-pai {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #343434;
+    flex-direction: column;
+
+}
+
+.body-bag {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #343434;
+    flex-direction: column;
+    gap: 50px;
+}
+
+
+.box-step-pai {
+    display: flex;
+    align-items: center;
+    background-color: #343434;
+    width: 97%;
+}
+
+.container-steps {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    border-radius: 12px;
+    background: var(--roxo-quase-branco, #C2BAD8);
+}
+
+.box-step {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 20%;
+    font-weight: 500;
+    cursor: pointer;
+    gap: 8px;
+}
+
+.box-step ion-icon {
+    font-size: 20px;
+    color: var(--roxo-claro);
+}
+
+.box-step .--complete {
+    color: var(--roxo-principal);
+}
+
+.container-alinhamento {
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+}
+
+.step-bar {
+    width: 80%;
+    height: 6px;
+    border-radius: 12px;
+    background-color: var(--roxo-claro);
+}
+
+.step-bar.--finished {
+    background: var(--roxo-principal);
+}
+
+.dados {
+    color: var(--roxo-principal, #483D8B);
+    font-family: Rubik;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.conteiner-pai-row {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+}
+
+.conteiner-sacola-pai {
+    display: flex;
+    flex-direction: row;
+}
+
+.conteiner-sacola {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 65%;
+    height: 30%;
+    border-radius: 12px;
+    background: var(--branco-fundo, #E0DCEB);
+}
+
+.produtos-delete {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.produtos-frete {
+    display: flex;
+    justify-content: center;
+    width: 35%;
+    color: var(--roxo-principal, #483D8B);
+    text-align: center;
+    font-family: Rubik;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.limpar-sacola {
+    display: flex;
+    justify-content: center;
+    width: 35%;
+    color: var(--roxo-principal, #483D8B);
+    text-align: center;
+    font-family: Rubik;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.itens-pagamento {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 98%;
+    height: 70%;
+    border-radius: 12px;
+    background: #F1F1F1;
+    box-shadow: 2px 6px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.relogio-sacola {
+    width: 5rem;
+    height: 5rem;
+}
+
+.adicionar-remove {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 6px;
+    background: #FFF;
+    box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.50);
+    width: 5rem;
+    height: 22px;
+}
+
+.trash {
+    padding: 1px;
+    border-radius: 50px;
+    background: var(--roxo-mais-claro, #A499C4);
+    color: #FFF;
+}
+
+.add {
+    padding: 1px;
+    border-radius: 50px;
+    background: var(--roxo-principal, #483D8B);
+    color: #FFF;
+}
+
+.escrita-nome-relogio-pai {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 3rem;
+}
+
+.escrita-nome-relogio {
+    color: var(--cinza-quase-preto, #343434);
+    text-align: center;
+    font-family: Roboto Condensed;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.marca {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 5rem;
+    font-size: 13px;
+}
+
+.modelo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 5rem;
+    font-size: 13px;
+}
+
+.relogio-infos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.modelo-black {
+    color: var(--cinza-quase-preto, #343434);
+    font-family: Rubik;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.cor-tam-pai {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 4.5rem;
+}
+
+.cor-do-produto {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    font-size: 13px;
+}
+
+.cor-bolinha {
+    padding: 8px;
+    border-radius: 500px;
+    border: 4px solid var(--branco-fundo, #E0DCEB);
+    background: #414141;
+    box-shadow: -2px 5px 2px 2px rgba(0, 0, 0, 0.25) inset;
+}
+
+.tamanho-pulseira {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    font-size: 13px;
+}
+
+.preco-bag {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 7rem;
+}
+
+.preco-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.produto-size,
+.frete-size,
+.valor-size {
+    font-size: 13px;
+}
+
+.rectangle-30 {
+    height: 2px;
+    align-self: stretch;
+    border-radius: 6px;
+    background: var(--roxo-mais-claro, #A499C4);
+}
+
+.preco-bag-roxo {
+    color: var(--roxo-principal, #483D8B);
+    font-family: Rubik;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.card-pagamento {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 29%;
+    border-radius: 12px;
+    background: var(--branco-fundo, #E0DCEB);
+}
+
+.menu-icon,
+.info-pagamento-icon{
+    color: var(--roxo-principal, #483D8B);
+    font-family: Rubik;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.info-pagamento-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.conteiner-info-pagamento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+}
+
+.valor-escrita1{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+
+
+@media (max-width: 890px) {
+    .conteiner-sacola {
+        height: 40%;
+    }
+}
+
+@media (max-width: 600px) {
+    .conteiner-sacola {
+        height: 45%;
+    }
+}
