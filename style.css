@@ -29,20 +29,10 @@
     --cinza: #8e8e8e;
 }
 
-.body-bag-pai {
+.body-bag{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 100vh;
-    background-color: #343434;
-    flex-direction: column;
-
-}
-
-.body-bag {
-    display: flex;
-    align-items: center;
     width: 100%;
     height: 100vh;
     background-color: #343434;
@@ -134,7 +124,7 @@
     align-items: center;
     flex-direction: column;
     width: 65%;
-    height: 30%;
+    height: 35%;
     border-radius: 12px;
     background: var(--branco-fundo, #E0DCEB);
 }
@@ -337,7 +327,7 @@
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    width: 29%;
+    width: 30%;
     border-radius: 12px;
     background: var(--branco-fundo, #E0DCEB);
 }
@@ -362,16 +352,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 85%;
+    justify-content: space-around;
+    width: 100%;
 }
 
-.valor-escrita1{
+.valor-escrita{
     display: flex;
     align-items: center;
     flex-direction: row;
-    width: 100%;
-    justify-content: space-around;
+    width: 70%;
+    justify-content: space-between;
 }
 
 
